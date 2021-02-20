@@ -25,7 +25,7 @@ class App extends React.Component {
     this.setState({
       [name]:value
     })
-    fetch(`http://www.omdbapi.com/?apikey=4ea7876b&s=${value}`)
+    fetch(`https://www.omdbapi.com/?apikey=4ea7876b&s=${value}`)
       .then( response => response.json())
       .then( data => 
         this.setState({
